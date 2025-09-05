@@ -55,7 +55,12 @@ public class Main {
 
         if (verbosity > 0) {
             System.out.println("Using koodistot base url " + koodistotBaseURL);
-            System.out.println("Using apikey " + apikey);
+            if (verbosity > 3) {
+                System.out.println("Using apikey " + apikey);
+            } else {
+                // just show begin and end
+                System.out.println("Using apikey " + apikey.substring(0,5) + "..." + apikey.substring(apikey.length() - 5));
+            }
         }
 
         KoodistotSuomiFi koodistot = new KoodistotSuomiFi(koodistotBaseURL, apikey, orgId);
