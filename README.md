@@ -60,4 +60,14 @@ For prod: https://rhp.suomi.fi/
 
 Roles you have are listed in the userDetails path like https://rhp.suomi.fi/userDetails.
 
-TODO: how to find the organization id for settings.properties/env-variable
+### Setting your organization id
+
+Set the `koodistot.org` (or matching ENV variable) in settings.properties/env-variable to your organization id (uuid).
+
+Find out possible list of organizations for example from:
+
+For test env: https://koodistot.test.yti.cloud.dvv.fi/codelist-intake/api/v1/organizations
+For prod env: https://koodistot.suomi.fi/codelist-intake/api/v1/organizations
+
+Note that the organization id (most probably) is not the same in test and in prod environments. Act accordingly.
+
