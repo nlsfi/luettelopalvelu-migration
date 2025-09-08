@@ -35,7 +35,7 @@ Add `-Dhttps.proxyHost={proxy domain} -Dhttps.proxyPort={proxy port}` to java-co
 ## Command line arguments
 
 Options:
-* `-u`, to run in update mode (reload is default)
+* `-u`, to run in update mode (reload is default). Updates only changed files instead of reloading everything.
 * `-v`/`-vv`, for (more) verbose reporting
 * `--dry-run`, don't actually touch anything in koodistot.suomi.fi, just report what would happen
 * `--set-valid`, required to actually set status to valid (by-default we stop at DRAFT status)
